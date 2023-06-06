@@ -10,7 +10,7 @@ const handler = NextAuth({
       // You can specify which fields should be submitted, by adding keys to the `credentials` object.
       // e.g. domain, username, password, 2FA token, etc.
       // You can pass any HTML attribute to the <input> tag through the object.
-      credentials: {},
+      credentials: <any>{},
       async authorize(credentials, req) {
         // Add logic here to look up the user from the credentials supplied
         const res = await fetch('http://localhost:3000/api/login', {

@@ -37,7 +37,9 @@ export const Navbar: FC = () => {
             <NavItem name='Тел. справочник' />
             <NavItem name='Тел. спр. Брестэнерго' />
             {session && session.user.isAdmin ? (
-              <NavItem name='Создать пост' />
+              <Link href='/create-post/'>
+                <NavItem name='Создать пост' />
+              </Link>
             ) : (
               ''
             )}

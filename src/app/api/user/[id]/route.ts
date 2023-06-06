@@ -17,7 +17,7 @@ export async function GET(
     );
   }
   const userPosts = await prisma.post.findMany({
-    where: { authorId: +params.id },
+    where: { userId: +params.id },
     include: {
       author: {
         select: {
