@@ -36,7 +36,8 @@ const Aside = () => {
               <AsideNavItem name='Восточная районная котельная №2' />
               <AsideNavItem name='Южная районная котельная' />
               <AsideNavItem name='Социально-бытовой комплекс' />
-              <AsideNavItem name='Участок ЗАО «Энерготеплоизоляция»' />
+              <AsideNavItem name='Профсоюз' />
+              <AsideNavItem name='Общий ресурс' />
             </ul>
           </nav>
         </aside>

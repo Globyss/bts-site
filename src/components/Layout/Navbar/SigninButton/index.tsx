@@ -7,7 +7,7 @@ const SignInButton = () => {
   if (session && session.user) {
     return (
       <div>
-        <button onClick={() => signOut()}>Выйти</button>
+        <button onClick={() => signOut({ redirect: false })}>Выйти</button>
       </div>
     );
   }
