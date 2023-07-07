@@ -34,8 +34,12 @@ export const Navbar: FC = () => {
           <ul className='flex justify-between text-lg font-medium gap-10'>
             <NavItem name={<FaSearch className='h-6 w-6' />} />
             <Link href='/'></Link>
-            <NavItem name='Тел. справочник' />
-            <NavItem name='Тел. спр. Брестэнерго' />
+            <a href='http://10.181.192.12:8080/Справочник БТС 2023.pdf'>
+              <NavItem name='Тел. справочник' />
+            </a>
+            <a href='http://10.181.192.12:8080/Брестэнерго/Брестэнерго 15-7-2020.pdf'>
+              <NavItem name='Тел. спр. Брестэнерго' />
+            </a>
             {session && session.user.isAdmin ? (
               <Link href='/create-post/'>
                 <NavItem name='Создать пост' />
